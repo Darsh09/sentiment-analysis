@@ -107,8 +107,8 @@ def ocr():
     else:
         return jsonify({ "result": "User does not exist" })
 
-@app.route('/api/naivebayes', methods=['POST'])
-def naivebayes():
+@app.route('/api/lstm', methods=['POST'])
+def lstm():
     id = request.json['id']
     text = request.json['text']
 
